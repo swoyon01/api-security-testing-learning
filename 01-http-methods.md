@@ -272,6 +272,9 @@ PATCH /api/users/1 → 200 OK? (can you partially update?)
 ## 📝 My Practice Log
 
 ### Day 1 — GET & POST Practice
+
+<img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/38063daa-d06b-4c8f-a8de-4f0bdfbb180d" />
+
 - **Target:** https://jsonplaceholder.typicode.com
 - **GET /posts/1** → Status: 200, Response time: 245ms
 - **POST /posts** → Status: 201, Created ID: 101
