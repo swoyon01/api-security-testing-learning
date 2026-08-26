@@ -1,48 +1,54 @@
 <div align="center">
 
-# 🔐 API Security Testing
+# 🔐 API Security Testing — Learning Journey
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Roadmap](https://img.shields.io/badge/Roadmap-4%20Months-blue.svg)]()
-[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
+[![Status](https://img.shields.io/badge/Status-Active%20Learning-brightgreen?style=for-the-badge)]()
+[![Progress](https://img.shields.io/badge/Progress-Week%200%2F16-blue?style=for-the-badge)]()
+[![Labs](https://img.shields.io/badge/Labs-0%20Completed-orange?style=for-the-badge)]()
+[![Scripts](https://img.shields.io/badge/Scripts-0%20Built-yellow?style=for-the-badge)]()
+[![Focus](https://img.shields.io/badge/Focus-REST%20API%20Security-critical?style=for-the-badge)]()
 
-**A comprehensive, hands-on learning repository for API Security Testing — from HTTP basics to real-world bug bounty hunting.**
+> **A comprehensive, hands-on documentation of my API Security Testing journey — from HTTP fundamentals to real-world bug bounty hunting.**
+>
+> *"Every expert was once a beginner. This repo is proof of the grind."*
 
-[Getting Started](#-getting-started) • [Roadmap](#-roadmap) • [Labs](#-labs) • [Resources](#-resources)
+[Progress](#-progress-overview) • [Labs](#-lab-index) • [Notes](#-learning-notes) • [Roadmap](#-16-week-roadmap) • [Resources](#-resources)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 👤 About This Repository
 
-- [Overview](#-overview)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Learning Roadmap](#-learning-roadmap)
-- [Labs & Practice](#-labs--practice)
-- [Tools & Technologies](#-tools--technologies)
-- [Key Vulnerabilities Covered](#-key-vulnerabilities-covered)
-- [Resources](#-resources)
-- [How to Use This Repo](#-how-to-use-this-repo)
-- [Contributing](#-contributing)
-- [License](#-license)
+**Author:** Saber Hasan Swoyon | Software Engineering Undergraduate
+
+- 🛡️ **Aspiring Application Security (AppSec) Engineer**
+- 🐍 **Tech Stack:** Python | Linux | Burp Suite | Postman | Docker
+- 📚 **Currently Learning:** REST API Security Testing
+- 🎯 **Goal:** Master API vulnerabilities → Bug Bounty → AppSec Career
+
+> 🔗 **My Main Portfolio:** [Cybersecurity Labs Portfolio](https://github.com/YOUR_USERNAME/cybersecurity-labs-portfolio)
+
+This repository serves as my **centralized learning hub** for API Security Testing. Every concept I learn, every lab I complete, every script I write — everything is documented here. Once this learning journey is complete, I will compile the best findings into a polished, public portfolio repository.
 
 ---
 
-## 🎯 Overview
+## 📊 Progress Overview
 
-This repository documents my journey into **API Security Testing**, covering the complete pipeline from understanding REST APIs to identifying and exploiting real-world vulnerabilities. The content is structured for **systematic learning** with a strong emphasis on **practical, hands-on labs**.
+| Category | Completed | In Progress | Not Started |
+|----------|:---------:|:-----------:|:-----------:|
+| **01 — HTTP Basics** | 0 | 0 | 4 |
+| **02 — Tools Setup** | 0 | 0 | 3 |
+| **03 — Authentication** | 0 | 0 | 4 |
+| **04 — Authorization** | 0 | 0 | 3 |
+| **05 — Common Vulnerabilities** | 0 | 0 | 4 |
+| **06 — Labs & Practice** | 0 | 0 | 4+ |
+| **07 — Notes & Cheatsheets** | 0 | 0 | 2 |
+| **08 — Resources** | 0 | 0 | 3 |
 
-### What You'll Find Here
+**Overall Progress:** `0%` (0 / 30 topics)
 
-- ✅ Structured learning modules from basics to advanced
-- ✅ Step-by-step vulnerable API lab walkthroughs
-- ✅ Authentication & Authorization attack vectors
-- ✅ Custom Python automation scripts
-- ✅ Bug bounty reporting templates
-- ✅ Curated resources and cheat sheets
+**Current Phase:** 🟡 **Foundation** — Week 1–2
 
 ---
 
@@ -51,139 +57,439 @@ This repository documents my journey into **API Security Testing**, covering the
 ```
 api-security-testing/
 │
-├── 📂 01-basics/                  # HTTP, JSON, Status Codes
-├── 📂 02-tools-setup/             # Postman, Burp Suite, cURL
-├── 📂 03-authentication/          # API Keys, JWT, Sessions
-├── 📂 04-authorization/           # BOLA/IDOR, BFLA, Mass Assignment
-├── 📂 05-common-vulnerabilities/  # SQLi, XSS, Rate Limiting
-├── 📂 06-labs-practice/           # crAPI, PortSwigger Walkthroughs
-├── 📂 07-notes/                   # OWASP API Top 10 Summaries
-├── 📂 08-resources/               # YouTube, Blogs, Platforms
+├── 📄 README.md                    ← You are here (Main tracking file)
+├── 📄 ROADMAP.md                   ← Detailed 16-week learning plan
+├── 📄 .gitignore
 │
-├── 📄 README.md                   # You are here
-├── 📄 ROADMAP.md                  # Detailed 4-month learning plan
-└── 📄 .gitignore
+├── 📂 01-basics/                   ← Foundation Phase
+│   ├── 📄 01-http-methods.md
+│   ├── 📄 02-status-codes.md
+│   ├── 📄 03-json-basics.md
+│   └── 📄 04-api-vs-website.md
+│
+├── 📂 02-tools-setup/              ← Tool Mastery
+│   ├── 📄 01-postman-setup.md
+│   ├── 📄 02-burp-suite-setup.md
+│   └── 📄 03-curl-commands.md
+│
+├── 📂 03-authentication/           ← Breaking Authentication
+│   ├── 📄 01-api-keys.md
+│   ├── 📄 02-jwt-basics.md
+│   ├── 📄 03-jwt-common-attacks.md
+│   └── 📄 04-session-tokens.md
+│
+├── 📂 04-authorization/            ← Breaking Authorization ⭐
+│   ├── 📄 01-idor-bola.md
+│   ├── 📄 02-bfla.md
+│   └── 📄 03-mass-assignment.md
+│
+├── 📂 05-common-vulnerabilities/   ← Other API Attacks
+│   ├── 📄 01-sql-injection-api.md
+│   ├── 📄 02-xss-via-api.md
+│   ├── 📄 03-rate-limiting.md
+│   └── 📄 04-error-message-leakage.md
+│
+├── 📂 06-labs-practice/            ← Hands-On Labs
+│   ├── 📄 01-crapi-setup.md
+│   ├── 📄 02-lab1-idor.md
+│   ├── 📄 03-lab2-jwt.md
+│   ├── 📄 04-lab3-auth-bypass.md
+│   └── 📂 screenshots/
+│
+├── 📂 07-notes/                    ← Quick Reference
+│   ├── 📄 owasp-api-top10-summary.md
+│   └── 📄 bug-bounty-tips.md
+│
+└── 📂 08-resources/                ← External Links
+    ├── 📄 youtube-playlists.md
+    ├── 📄 useful-websites.md
+    └── 📄 practice-platforms.md
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🧪 Lab Index
 
-### Prerequisites
+### crAPI (Completely Ridiculous API) — Local Lab
 
-Before diving in, ensure you have:
+> **Setup:** `docker run -p 8888:8888 crapi/crapi-all` → http://localhost:8888
 
-| Requirement | Purpose |
-|-------------|---------|
-| [Postman](https://www.postman.com/downloads/) | API testing & manual requests |
-| [Burp Suite Community](https://portswigger.net/burp/communitydownload) | Proxy, intercept & repeater |
-| [Docker](https://www.docker.com/products/docker-desktop) | Run vulnerable labs locally |
-| Python 3.x | Automation scripts |
-| Linux/Unix Terminal | cURL & command-line tools |
+| # | Challenge | Vulnerability | Difficulty | Status | Write-up |
+|---|-----------|---------------|:----------:|:------:|----------|
+| 01 | — | — | — | 🔴 | — |
+| 02 | — | — | — | 🔴 | — |
+| 03 | — | — | — | 🔴 | — |
+| 04 | — | — | — | 🔴 | — |
+| 05 | — | — | — | 🔴 | — |
+| 06 | — | — | — | 🔴 | — |
+| 07 | — | — | — | 🔴 | — |
+| 08 | — | — | — | 🔴 | — |
+| 09 | — | — | — | 🔴 | — |
+| 10 | — | — | — | 🔴 | — |
 
-### Quick Setup
+### PortSwigger Web Security Academy — API Labs
+
+| # | Lab Name | Vulnerability | Difficulty | Status | Write-up |
+|---|----------|---------------|:----------:|:------:|----------|
+| 01 | — | — | — | 🔴 | — |
+| 02 | — | — | — | 🔴 | — |
+| 03 | — | — | — | 🔴 | — |
+| 04 | — | — | — | 🔴 | — |
+| 05 | — | — | — | 🔴 | — |
+
+### VAmPI — Local Lab
+
+> **Setup:** `docker run -p 5000:5000 erev0s/vampi`
+
+| # | Challenge | Vulnerability | Status | Write-up |
+|---|-----------|---------------|:------:|----------|
+| 01 | — | — | 🔴 | — |
+| 02 | — | — | 🔴 | — |
+| 03 | — | — | 🔴 | — |
+
+### Custom Scripts & Tools
+
+| # | Script Name | Purpose | Language | Status | Location |
+|---|-------------|---------|----------|:------:|----------|
+| 01 | — | — | Python | 🔴 | — |
+| 02 | — | — | Python | 🔴 | — |
+| 03 | — | — | Python | 🔴 | — |
+| 04 | — | — | Python | 🔴 | — |
+
+**Legend:** 🔴 Not Started | 🟡 In Progress | ✅ Completed
+
+---
+
+## 📝 Learning Notes
+
+### 01 — HTTP Basics
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 1.1 | HTTP Methods | GET, POST, PUT, DELETE, PATCH, OPTIONS | 🔴 | `01-basics/01-http-methods.md` |
+| 1.2 | Status Codes | 1xx, 2xx, 3xx, 4xx, 5xx categories | 🔴 | `01-basics/02-status-codes.md` |
+| 1.3 | JSON Basics | Objects, arrays, strings, numbers, booleans, null | 🔴 | `01-basics/03-json-basics.md` |
+| 1.4 | API vs Website | How APIs differ from traditional web apps | 🔴 | `01-basics/04-api-vs-website.md` |
+
+### 02 — Tools Setup
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 2.1 | Postman | Collections, environments, variables, tests | 🔴 | `02-tools-setup/01-postman-setup.md` |
+| 2.2 | Burp Suite | Proxy, intercept, repeater, intruder, target scope | 🔴 | `02-tools-setup/02-burp-suite-setup.md` |
+| 2.3 | cURL | Command-line requests, headers, auth, data | 🔴 | `02-tools-setup/03-curl-commands.md` |
+
+### 03 — Authentication
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 3.1 | API Keys | Header vs URL vs Cookie placement, exposure risks | 🔴 | `03-authentication/01-api-keys.md` |
+| 3.2 | JWT Basics | Structure (Header.Payload.Signature), claims, decode | 🔴 | `03-authentication/02-jwt-basics.md` |
+| 3.3 | JWT Common Attacks | None alg, weak secret, KID injection, alg confusion | 🔴 | `03-authentication/03-jwt-common-attacks.md` |
+| 3.4 | Session Tokens | Cookies vs tokens, session fixation, hijacking | 🔴 | `03-authentication/04-session-tokens.md` |
+
+### 04 — Authorization ⭐
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 4.1 | BOLA / IDOR | Broken Object Level Authorization, ID manipulation | 🔴 | `04-authorization/01-idor-bola.md` |
+| 4.2 | BFLA | Broken Function Level Authorization, admin endpoints | 🔴 | `04-authorization/02-bfla.md` |
+| 4.3 | Mass Assignment | Injecting extra JSON properties for privilege escalation | 🔴 | `04-authorization/03-mass-assignment.md` |
+
+### 05 — Common Vulnerabilities
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 5.1 | SQL Injection (API) | SQLi via API parameters, headers, JSON values | 🔴 | `05-common-vulnerabilities/01-sql-injection-api.md` |
+| 5.2 | XSS via API | Stored & reflected XSS through API responses | 🔴 | `05-common-vulnerabilities/02-xss-via-api.md` |
+| 5.3 | Rate Limiting | 429 responses, bypass via headers, IP rotation | 🔴 | `05-common-vulnerabilities/03-rate-limiting.md` |
+| 5.4 | Error Message Leakage | Stack traces, sensitive info, verbose errors | 🔴 | `05-common-vulnerabilities/04-error-message-leakage.md` |
+
+### 06 — Labs & Practice
+
+| # | Lab | Platform | Vulnerability | Status | File |
+|---|-----|----------|---------------|:------:|------|
+| 6.1 | crAPI Setup | Docker | Lab environment | 🔴 | `06-labs-practice/01-crapi-setup.md` |
+| 6.2 | Lab 1 — IDOR | crAPI/PortSwigger | BOLA/IDOR | 🔴 | `06-labs-practice/02-lab1-idor.md` |
+| 6.3 | Lab 2 — JWT | crAPI/PortSwigger | JWT attacks | 🔴 | `06-labs-practice/03-lab2-jwt.md` |
+| 6.4 | Lab 3 — Auth Bypass | crAPI/PortSwigger | Authentication | 🔴 | `06-labs-practice/04-lab3-auth-bypass.md` |
+
+### 07 — Notes & Cheatsheets
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 7.1 | OWASP API Top 10 | 2023 version summary with examples | 🔴 | `07-notes/owasp-api-top10-summary.md` |
+| 7.2 | Bug Bounty Tips | Reporting, CVSS, PoC, platforms | 🔴 | `07-notes/bug-bounty-tips.md` |
+
+### 08 — Resources
+
+| # | Topic | Description | Status | File |
+|---|-------|-------------|:------:|------|
+| 8.1 | YouTube Playlists | Curated video tutorials | 🔴 | `08-resources/youtube-playlists.md` |
+| 8.2 | Useful Websites | Blogs, documentation, tools | 🔴 | `08-resources/useful-websites.md` |
+| 8.3 | Practice Platforms | TryHackMe, HTB, PortSwigger, etc. | 🔴 | `08-resources/practice-platforms.md` |
+
+---
+
+## 🗺️ 16-Week Roadmap
+
+> **Duration:** 16 Weeks (4 Months)  
+> **Daily Commitment:** 1.5–2 Hours  
+> **Start Date:** [Fill in your start date]
+
+### Phase 1: Foundation (Week 1–2)
+**Goal:** Understand how APIs communicate
+
+- [ ] **Week 1:** HTTP Methods (GET, POST, PUT, DELETE, PATCH, OPTIONS)
+  - Make 50+ API requests using Postman
+  - Understand request/response lifecycle
+  - Document: `01-basics/01-http-methods.md`
+
+- [ ] **Week 2:** Status Codes & JSON
+  - Build status code reference sheet (1xx–5xx)
+  - Parse complex JSON responses
+  - Understand Content-Type headers
+  - Document: `01-basics/02-status-codes.md` + `01-basics/03-json-basics.md`
+
+**Deliverables:** Complete `01-basics/` folder
+
+---
+
+### Phase 2: Tools Mastery (Week 3–4)
+**Goal:** Become comfortable with testing tools
+
+- [ ] **Week 3:** Postman Deep Dive
+  - Collections, folders, environment variables
+  - Pre-request scripts & tests
+  - Collection runner for automation
+  - Document: `02-tools-setup/01-postman-setup.md`
+
+- [ ] **Week 4:** Burp Suite for APIs
+  - Proxy setup with Firefox + FoxyProxy
+  - Intercept, Repeater, Intruder basics
+  - Target scope & filtering
+  - Document: `02-tools-setup/02-burp-suite-setup.md`
+
+**Deliverables:** Complete `02-tools-setup/` folder + screenshots
+
+---
+
+### Phase 3: Authentication Attacks (Week 5–7)
+**Goal:** Break how APIs verify "who you are"
+
+- [ ] **Week 5:** API Keys & Basic Auth
+  - Key placement risks (URL, header, cookie)
+  - Basic Auth (Base64) testing
+  - Common misconfigurations
+  - Document: `03-authentication/01-api-keys.md`
+
+- [ ] **Week 6:** JWT Basics
+  - Structure: Header.Payload.Signature
+  - Decode with jwt.io
+  - Claims: iss, sub, aud, exp, nbf, iat, jti
+  - Document: `03-authentication/02-jwt-basics.md`
+
+- [ ] **Week 7:** JWT Attacks
+  - None algorithm attack
+  - Weak secret brute force
+  - KID injection & algorithm confusion
+  - Complete PortSwigger JWT labs
+  - Document: `03-authentication/03-jwt-common-attacks.md`
+
+**Deliverables:** Complete `03-authentication/` folder + working PoCs
+
+---
+
+### Phase 4: Authorization Attacks ⭐ (Week 8–11)
+**Goal:** Break how APIs verify "what you can do"
+
+- [ ] **Week 8:** BOLA / IDOR
+  - Set up crAPI lab
+  - Identify endpoints with object IDs
+  - Test horizontal privilege escalation
+  - Document: `04-authorization/01-idor-bola.md` + lab walkthrough
+
+- [ ] **Week 9:** BFLA
+  - Discover admin endpoints
+  - Test with normal user token
+  - Method-based access control
+  - Document: `04-authorization/02-bfla.md`
+
+- [ ] **Week 10:** Mass Assignment
+  - Send extra JSON properties
+  - Test for privilege escalation
+  - Complete crAPI mass assignment challenge
+  - Document: `04-authorization/03-mass-assignment.md`
+
+- [ ] **Week 11:** Authorization Review
+  - Review all authorization vulnerabilities
+  - Complete remaining PortSwigger labs
+  - Build reusable testing checklist
+
+**Deliverables:** Complete `04-authorization/` folder + 3+ lab walkthroughs
+
+---
+
+### Phase 5: Common Vulnerabilities (Week 12–13)
+**Goal:** Find other weaknesses in APIs
+
+- [ ] **Week 12:** Injection Attacks
+  - SQL Injection via API parameters
+  - XSS through API responses
+  - Document: `05-common-vulnerabilities/01-sql-injection-api.md` + `02-xss-via-api.md`
+
+- [ ] **Week 13:** Rate Limiting & Info Disclosure
+  - Test for rate limiting (429)
+  - Bypass via headers (X-Forwarded-For, etc.)
+  - Error message analysis
+  - Build rate-limit bypass script
+  - Document: `05-common-vulnerabilities/03-rate-limiting.md` + `04-error-message-leakage.md`
+
+**Deliverables:** Complete `05-common-vulnerabilities/` folder + scripts
+
+---
+
+### Phase 6: Real-World Practice (Week 14–16)
+**Goal:** Apply everything in realistic environments
+
+- [ ] **Week 14:** crAPI Complete Walkthrough
+  - Solve all crAPI challenges
+  - Write bug reports for each finding
+  - Document: `06-labs-practice/`
+
+- [ ] **Week 15:** PortSwigger API Labs
+  - Complete all API-related labs
+  - Document techniques & payloads
+
+- [ ] **Week 16:** Bug Bounty Preparation
+  - Choose target with API scope
+  - Perform recon & find endpoints
+  - Submit first bug bounty report
+
+**Deliverables:** Complete `06-labs-practice/` + first bug bounty submission
+
+---
+
+## 🎯 OWASP API Security Top 10 (2023) — Progress Tracker
+
+| Rank | Vulnerability | API Category | Status | Notes |
+|:----:|---------------|:------------:|:------:|-------|
+| API1 | **Broken Object Level Authorization** | Authorization | 🔴 | — |
+| API2 | **Broken Authentication** | Authentication | 🔴 | — |
+| API3 | **Broken Object Property Level Authorization** | Authorization | 🔴 | — |
+| API4 | **Unrestricted Resource Consumption** | Availability | 🔴 | — |
+| API5 | **Broken Function Level Authorization** | Authorization | 🔴 | — |
+| API6 | **Unrestricted Access to Sensitive Business Flows** | Business Logic | 🔴 | — |
+| API7 | **Server Side Request Forgery (SSRF)** | Injection | 🔴 | — |
+| API8 | **Security Misconfiguration** | Configuration | 🔴 | — |
+| API9 | **Improper Inventory Management** | Asset Management | 🔴 | — |
+| API10 | **Unsafe Consumption of APIs** | Third-Party | 🔴 | — |
+
+**Legend:** 🔴 Not Started | 🟡 Learning | 🟢 Practiced | ✅ Mastered
+
+---
+
+## 🛠️ My Toolkit
+
+```
+┌─────────────────────────────────────────────┐
+│  OS:        Kali Linux (VirtualBox)         │
+│  Browser:   Firefox + FoxyProxy             │
+│  Proxy:     Burp Suite Community Edition    │
+│  API Tool:  Postman                         │
+│  Editor:    VS Code                         │
+│  Terminal:  Bash / Zsh                      │
+│  Languages: Python 3, Bash                  │
+│  Labs:      Docker (crAPI, VAmPI)           │
+└─────────────────────────────────────────────┘
+```
+
+### Python Libraries for API Testing
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/api-security-testing.git
-cd api-security-testing
-
-# Set up vulnerable lab environment (crAPI)
-docker pull crapi/crapi-all
-docker run -p 8888:8888 crapi/crapi-all
-
-# Access crAPI at http://localhost:8888
+pip install requests        # HTTP requests
+pip install pyjwt           # JWT encode/decode
+pip install python-jose     # JWT verification
+pip install urllib3         # Advanced HTTP client
 ```
 
 ---
 
-## 🗺️ Learning Roadmap
+## 📚 Resources
 
-> **Duration:** 16 Weeks (4 Months) | **Commitment:** 1.5–2 Hours/Day
+### 📖 Books & Documentation
 
-### Phase 1: Foundation (Weeks 1–2)
-- [ ] Understand HTTP Methods: GET, POST, PUT, DELETE
-- [ ] Master Status Codes: 200, 401, 403, 404, 500
-- [ ] Learn JSON structure & data types
-- [ ] Make 50+ API requests using Postman
+| Resource | Type | Link |
+|----------|------|------|
+| OWASP API Security Top 10 (2023) | Official Guide | [owasp.org](https://owasp.org/www-project-api-security/) |
+| PortSwigger Web Security Academy | Free Labs | [portswigger.net](https://portswigger.net/web-security) |
+| API Security in Action | Book | Manning Publications |
 
-**Deliverable:** Collection of API requests with different methods & headers.
+### 🎥 YouTube Channels
 
-### Phase 2: Tools Mastery (Weeks 3–4)
-- [ ] Configure Burp Suite Proxy with browser
-- [ ] Intercept & modify requests in Repeater
-- [ ] Write cURL one-liners for common operations
-- [ ] Understand request/response lifecycle
+| Channel | Focus | Link |
+|---------|-------|------|
+| InsiderPhD | Bug bounty & API hacking | [YouTube](https://www.youtube.com/@InsiderPhD) |
+| STÖK | Recon & methodology | [YouTube](https://www.youtube.com/@STOKfredrik) |
+| NahamSec | Beginner-friendly content | [YouTube](https://www.youtube.com/@NahamSec) |
+| HackerSploit | Labs & tools | [YouTube](https://www.youtube.com/@HackerSploit) |
 
-**Deliverable:** Intercepted & modified 20+ API requests via Burp.
+### 🏆 Bug Bounty Platforms
 
-### Phase 3: Authentication Attacks (Weeks 5–7)
-- [ ] Decode & analyze JWT tokens (jwt.io)
-- [ ] Identify None Algorithm vulnerability
-- [ ] Test weak JWT secrets
-- [ ] Understand API Key exposure risks
-- [ ] Session vs Token-based auth comparison
+| Platform | Best For | Link |
+|----------|----------|------|
+| HackerOne | Enterprise programs | [hackerone.com](https://hackerone.com) |
+| Bugcrowd | Diverse scope | [bugcrowd.com](https://bugcrowd.com) |
+| Intigriti | European programs | [intigriti.com](https://intigriti.com) |
 
-**Deliverable:** JWT attack lab completion with PoC screenshots.
+### 🧪 Practice Platforms
 
-### Phase 4: Authorization Attacks ⭐ (Weeks 8–11)
-- [ ] **BOLA (IDOR):** Access other users' resources by manipulating IDs
-- [ ] **BFLA:** Access admin endpoints with regular user credentials
-- [ ] **Mass Assignment:** Inject extra JSON properties for privilege escalation
-- [ ] Test horizontal & vertical privilege escalation
+| Platform | Type | Best For |
+|----------|------|----------|
+| PortSwigger Web Security Academy | Free Guided Labs | Structured learning |
+| TryHackMe | Rooms & Challenges | Beginner to advanced |
+| Hack The Box | Machines & CTFs | Realistic scenarios |
 
-**Deliverable:** 3 complete lab walkthroughs with detailed notes.
+### 🐳 Local Vulnerable Labs
 
-### Phase 5: Common Vulnerabilities (Weeks 12–13)
-- [ ] SQL Injection via API parameters
-- [ ] XSS through API responses
-- [ ] Rate Limiting bypass techniques
-- [ ] Sensitive data exposure in error messages
+```bash
+# crAPI — OWASP-based vulnerable API
+docker pull crapi/crapi-all
+docker run -p 8888:8888 crapi/crapi-all
+# Access: http://localhost:8888
 
-**Deliverable:** Vulnerability checklist for each attack type.
-
-### Phase 6: Real-World Practice (Weeks 14–16)
-- [ ] Complete PortSwigger API Security labs
-- [ ] Practice on Hack The Box / TryHackMe
-- [ ] Submit first bug bounty report (HackerOne/Bugcrowd)
-- [ ] Document findings with professional reports
-
-**Deliverable:** First valid bug bounty submission or CTF write-up.
+# VAmPI — Vulnerable API for auth & injection
+docker pull erev0s/vampi
+docker run -p 5000:5000 erev0s/vampi
+# Access: http://localhost:5000
+```
 
 ---
 
-## 🧪 Labs & Practice
+## 📝 How I Use This Repository
 
-### Local Vulnerable Labs
-
-| Lab | Description | Setup |
-|-----|-------------|-------|
-| **crAPI** | Completely Ridiculous API — OWASP-based vulnerable API | `docker run crapi/crapi-all` |
-| **VAmPI** | Vulnerable API for security testing | `docker run -p 5000:5000 erev0s/vampi` |
-| **vAPI** | Another vulnerable API project | Docker or local Python |
-
-### Online Platforms
-
-| Platform | Type | Link |
-|----------|------|------|
-| PortSwigger Web Security Academy | Free Guided Labs | [portswigger.net](https://portswigger.net/web-security) |
-| TryHackMe | Rooms & Challenges | [tryhackme.com](https://tryhackme.com) |
-| Hack The Box | Machines & CTFs | [hackthebox.com](https://www.hackthebox.com) |
+### Daily Routine
+1. **Study** → Read/watch tutorial on today's topic
+2. **Practice** → Fire up a lab or test on a public API
+3. **Document** → Write notes in the relevant `.md` file
+4. **Update** → Mark progress in this README
+5. **Commit** → `git add . && git commit -m "Week X: Topic completed"`
 
 ### Lab Documentation Format
-
-Each lab in `06-labs-practice/` follows this structure:
+Each lab walkthrough in `06-labs-practice/` follows:
 
 ```markdown
 ## Lab: [Name]
 
-### Target Endpoint
+### Target
 ```
 METHOD /api/endpoint
+Headers: ...
+Body: ...
 ```
 
 ### Vulnerability
-[BOLA / JWT / Auth Bypass / etc.]
+[Type: BOLA / JWT / Auth Bypass / etc.]
 
 ### Steps to Reproduce
 1. Step one
@@ -191,155 +497,53 @@ METHOD /api/endpoint
 3. Step three
 
 ### Proof of Concept
-[Screenshot attached in screenshots/]
+[Screenshot in screenshots/ folder]
 
 ### Impact
 [What an attacker can achieve]
 
 ### Mitigation
-[How to fix this vulnerability]
+[How to fix]
 ```
 
 ---
 
-## 🛠️ Tools & Technologies
+## ✅ Completion Checklist
 
-### Primary Tools
-
-| Tool | Category | Purpose |
-|------|----------|---------|
-| **Postman** | API Testing | Manual request crafting & collections |
-| **Burp Suite** | Proxy & Repeater | Intercept, modify, and replay requests |
-| **cURL** | Command Line | Quick API calls and automation |
-| **Docker** | Environment | Run vulnerable labs locally |
-
-### Python Libraries
-
-```txt
-requests          # HTTP requests
-pyjwt             # JWT encoding/decoding
-python-jose       # JWT verification
-urllib3           # Advanced HTTP client
-```
-
-### Browser Extensions
-
-- **FoxProxy** — Quick proxy switching
-- **JSON Viewer** — Format API responses
-- **Wappalyzer** — Technology fingerprinting
+- [ ] All `01-basics/` topics completed
+- [ ] All `02-tools-setup/` topics completed
+- [ ] All `03-authentication/` topics completed
+- [ ] All `04-authorization/` topics completed
+- [ ] All `05-common-vulnerabilities/` topics completed
+- [ ] At least 5 lab walkthroughs documented
+- [ ] At least 3 Python scripts written
+- [ ] OWASP API Top 10 summary completed
+- [ ] First bug bounty report submitted
+- [ ] Progress tracker fully updated
 
 ---
 
-## 🎯 Key Vulnerabilities Covered
+## 🔗 Connect With Me
 
-### 🔴 Critical
-
-| Vulnerability | OWASP Category | Description |
-|---------------|----------------|-------------|
-| **BOLA / IDOR** | API1:2023 | Access other users' objects by manipulating IDs |
-| **Broken Authentication** | API2:2023 | Weak JWT, None Alg, credential stuffing |
-| **BFLA** | API5:2023 | Regular user accessing admin functions |
-
-### 🟠 High
-
-| Vulnerability | OWASP Category | Description |
-|---------------|----------------|-------------|
-| **Mass Assignment** | API3:2023 | Injecting extra properties in JSON payloads |
-| **Excessive Data Exposure** | API3:2023 | APIs returning more data than needed |
-| **Rate Limit Bypass** | API4:2023 | Circumventing request throttling |
-
-### 🟡 Medium
-
-| Vulnerability | Description |
-|---------------|-------------|
-| **SQL Injection** | Injecting SQL via API parameters |
-| **XSS via API** | Stored/Reflected XSS through API responses |
-| **Error Message Leakage** | Stack traces & sensitive info in errors |
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/swoyon)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swoyon@email.com)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/swoyon)
 
 ---
 
-## 📚 Resources
-
-### 📖 Recommended Reading
-
-- [OWASP API Security Top 10 (2023)](https://owasp.org/www-project-api-security/)
-- [The Web Application Hacker's Handbook](https://portswigger.net/web-security)
-- [API Security in Action](https://www.manning.com/books/api-security-in-action)
-
-### 🎥 YouTube Channels
-
-- [InsiderPhD](https://www.youtube.com/@InsiderPhD) — Bug bounty & API hacking
-- [STÖK](https://www.youtube.com/@STOKfredrik) — Recon & methodology
-- [NahamSec](https://www.youtube.com/@NahamSec) — Beginner-friendly content
-- [HackerSploit](https://www.youtube.com/@HackerSploit) — Labs & tools
-
-### 📝 Blogs & Write-ups
-
-- [PortSwigger Research](https://portswigger.net/research)
-- [HackerOne Hacktivity](https://hackerone.com/hacktivity)
-- [Bugcrowd Blog](https://www.bugcrowd.com/blog/)
-
-### 🏆 Bug Bounty Platforms
-
-| Platform | Focus |
-|----------|-------|
-| [HackerOne](https://hackerone.com) | Enterprise programs |
-| [Bugcrowd](https://bugcrowd.com) | Diverse scope |
-| [Intigriti](https://intigriti.com) | European programs |
-
----
-
-## 📖 How to Use This Repo
-
-### For Beginners
-
-1. Start with `01-basics/` — don't skip fundamentals
-2. Set up tools from `02-tools-setup/`
-3. Follow the Roadmap week by week
-4. Complete every lab before moving forward
-
-### For Practice
-
-1. Pick a vulnerability from `04-authorization/` or `05-common-vulnerabilities/`
-2. Read the notes and understand the attack vector
-3. Fire up crAPI or PortSwigger lab
-4. Document your findings in the lab folder
-
-### For Bug Bounty
-
-1. Review `07-notes/` for quick reference
-2. Use checklists before submitting
-3. Follow the reporting template in `09-reporting/`
-4. Always include PoC screenshots
-
----
-
-## 🤝 Contributing
-
-This is a personal learning repository, but suggestions are welcome!
-
-If you find better resources, improved payloads, or want to share lab walkthroughs:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add: new payload for BOLA'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-> **Disclaimer:** This repository is for **educational purposes only**. Always test on systems you own or have explicit permission to test. Unauthorized access to computer systems is illegal.
+> **Disclaimer:** This repository is for educational and personal learning purposes only. All testing is performed on:
+> - Authorized training platforms (TryHackMe, PortSwigger)
+> - Locally hosted vulnerable labs (crAPI, VAmPI)
+> - Systems I own or have explicit permission to test
+>
+> **Unauthorized access to computer systems is illegal.**
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if you find it helpful!**
+**⭐ Star this repo to follow my API security journey!**
 
-*Happy Hacking! 🔥*
+*Learning one vulnerability at a time. Building the future of security. 🔥*
 
 </div>
