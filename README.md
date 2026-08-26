@@ -27,7 +27,7 @@
 - 📚 **Currently Learning:** REST API Security Testing
 - 🎯 **Goal:** Master API vulnerabilities → Bug Bounty → AppSec Career
 
-> 🔗 **My Main Portfolio:** [Cybersecurity Labs Portfolio](https://github.com/YOUR_USERNAME/cybersecurity-labs-portfolio)
+> 🔗 **My Main Portfolio:** [Cybersecurity Labs Portfolio](https://github.com/swoyon01/cybersecurity-labs)
 
 This repository serves as my **centralized learning hub** for API Security Testing. Every concept I learn, every lab I complete, every script I write — everything is documented here. Once this learning journey is complete, I will compile the best findings into a polished, public portfolio repository.
 
@@ -57,7 +57,7 @@ This repository serves as my **centralized learning hub** for API Security Testi
 ```
 api-security-testing/
 │
-├── 📄 README.md                    ← You are here (Main tracking file)
+├── 📄 README.md                   
 ├── 📄 ROADMAP.md                   ← Detailed 16-week learning plan
 ├── 📄 .gitignore
 │
