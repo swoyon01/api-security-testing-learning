@@ -275,8 +275,12 @@ PATCH /api/users/1 → 200 OK? (can you partially update?)
 
 <img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/38063daa-d06b-4c8f-a8de-4f0bdfbb180d" />
 
+<img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/46f3965f-9f4e-4021-b982-131033c321bc" />
+
+
+
 - **Target:** https://jsonplaceholder.typicode.com
-- **GET /posts/1** → Status: 200, Response time: 245ms
+- **GET /posts/1** → Status: 200, Response time: 995 ms
 - **POST /posts** → Status: 201, Created ID: 101
 - **Observation:** POST response included an `id` field I didn't send
 
