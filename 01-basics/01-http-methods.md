@@ -271,18 +271,75 @@ PATCH /api/users/1 → 200 OK? (can you partially update?)
 
 ## 📝 My Practice Log
 
-### Day 1 — GET & POST Practice
+### Day 1 — GET Practice
 
-<img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/38063daa-d06b-4c8f-a8de-4f0bdfbb180d" />
+<img width="2560" height="1368" alt="image" src="https://github.com/user-attachments/assets/808a33ed-10ff-45ab-9361-d046bfa1922d" />
 
-<img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/46f3965f-9f4e-4021-b982-131033c321bc" />
+**Request:**
+```
+GET https://jsonplaceholder.typicode.com/posts/1
+```
 
-
+**Response:**
+```json
+{
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae..."
+}
+```
 
 - **Target:** https://jsonplaceholder.typicode.com
-- **GET /posts/1** → Status: 200, Response time: 995 ms
-- **POST /posts** → Status: 201, Created ID: 101
-- **Observation:** POST response included an `id` field I didn't send
+- **GET /posts/1** → Status: 200, Response time: 650 ms
+
+**Key Observations:**
+- GET retrieves existing data
+- Response is in JSON format
+- No body is sent in the request
+- Data appears in the URL (not for sensitive info)
+
+---
+
+### Day 2 — POST Practice
+
+<img width="1280" height="684" alt="image" src="https://github.com/user-attachments/assets/da9294b9-b58d-4950-8216-0a6190cfd4e1" />
+
+**Request:**
+```http
+POST https://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Learning Postman",
+  "body": "Understanding HTTP METHODS and API testing with Postman"
+}
+```
+
+**Response:**
+```json
+{
+  "userId": 1,
+  "title": "Learning Postman",
+  "body": "Understanding HTTP METHODS and API testing with Postman",
+  "id": 101
+}
+```
+
+**Status Code:** `201 Created`  
+**Response Time:** `655 ms`  
+**Size:** `1.33 KB`
+
+**Key Observations:**
+- POST creates a new resource
+- Data is sent in the request body (JSON format)
+- Server assigns a new `id` (101) to the created resource
+- Status code `201` confirms successful creation
+- Body data is NOT visible in the URL (safe for sensitive data)
+
+---
+
 
 ### Day 2 — PUT & DELETE Practice
 - **PUT /posts/1** → Status: 200, Full replacement worked
