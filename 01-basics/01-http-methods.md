@@ -341,10 +341,122 @@ Content-Type: application/json
 ---
 
 
-### Day 2 — PUT & DELETE Practice
-- **PUT /posts/1** → Status: 200, Full replacement worked
-- **DELETE /posts/1** → Status: 200, Empty response body
-- **Observation:** No authentication required on this public API (expected)
+### Day 3 — PUT Practice
+
+<img width="1280" height="684" alt="Screenshot 2026-09-03 050322" src="https://github.com/user-attachments/assets/4fc0845d-76ec-443c-8027-9b20ed7d01f3" />
+
+
+**Request:**
+```http
+PUT https://jsonplaceholder.typicode.com/posts/10
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "Postman Basics",
+  "body": "Learning HTTP methods: GET, POST, PUT, DELETE"
+}
+```
+
+**Response:**
+```json
+{
+  "userId": 1,
+  "title": "Postman Basics",
+  "body": "Learning HTTP methods: GET, POST, PUT, DELETE",
+  "id": 10
+}
+```
+
+**Status Code:** `200 OK`  
+**Response Time:** `1.10 s`  
+**Size:** `1.2 KB`
+
+**Key Observations:**
+- PUT replaces the **entire** resource
+- All fields must be sent in the body
+- The `id` remains the same (10)
+- Response returns the fully updated object
+
+**Security Notes:**
+- ⚠️ **IDOR Risk:** If User A can PUT to `/posts/11` (User B's post), that's unauthorized modification
+- ⚠️ **Missing fields:** Some APIs reset missing fields to null — always verify what happens to fields you don't send
+- ⚠️ **Auth bypass:** If PUT doesn't check ownership, anyone can overwrite data
+
+---
+
+### Day 4 — PATCH Practice
+
+<img width="1280" height="684" alt="Screenshot 2026-09-03 051517" src="https://github.com/user-attachments/assets/aa5f7a78-6e77-40bb-bfb3-e504c1958ce3" />
+
+**Request:**
+```http
+PATCH https://jsonplaceholder.typicode.com/posts/10
+Content-Type: application/json
+
+{
+  "title": "Postman Basics & API testing"
+}
+```
+
+**Response:**
+```json
+{
+  "userId": 1,
+  "id": 10,
+  "title": "Postman Basics & API testing",
+  "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error"
+}
+```
+
+**Status Code:** `200 OK`  
+**Response Time:** `1.10 s`  
+**Size:** `1.27 KB`
+
+**Key Observations:**
+- PATCH updates **only** the `title` field I sent
+- The `body` field remained unchanged from before
+- `userId` and `id` stayed the same
+- Much safer than PUT for small updates
+
+**Security Notes:**
+- ⚠️ **Mass Assignment Risk:** Developers often forget to whitelist allowed fields in PATCH
+- ⚠️ Try sending extra fields like `"role": "admin"` or `"isAdmin": true` to test for privilege escalation
+- ⚠️ JSON Patch format (`{ "op": "replace", "path": "/role", "value": "admin" }`) can bypass validation
+
+---
+
+
+### Day 5 — PATCH Practice
+<img width="1280" height="684" alt="Screenshot 2026-09-03 052246" src="https://github.com/user-attachments/assets/24fab316-2699-4c3c-b56a-2650f55d1f2b" />
+
+**Request:**
+```http
+DELETE https://jsonplaceholder.typicode.com/posts/10
+```
+
+**Response:**
+```json
+{}
+```
+
+**Status Code:** `200 OK`  
+**Response Time:** `974 ms`  
+**Size:** `1.08 KB`
+
+**Key Observations:**
+- DELETE removes the resource
+- No request body is needed
+- Response body is empty `{}`
+- The resource is permanently deleted
+
+**Security Notes:**
+- ⚠️ **CRITICAL:** No confirmation required — one request = permanent deletion
+- ⚠️ **Authorization:** Always check if the user owns the resource before allowing DELETE
+- ⚠️ **Cascade Delete:** Deleting a user might delete all their posts, comments, etc.
+- ⚠️ **Test for BFLA:** Can a normal user DELETE `/admin/posts/1`?
+
+---
 
 ### Day 3 — OPTIONS & Method Testing
 - **OPTIONS /posts** → Allow: GET, POST, HEAD, OPTIONS
